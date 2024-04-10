@@ -1,0 +1,6 @@
+5
+66D:\alta varinata cafe site\website-cafe-another-variant\index.html133572320396499702 0
+65D:\alta varinata cafe site\website-cafe-another-variant\style.css133572324605410049 0
+68D:\alta varinata cafe site\website-cafe-another-variant\package.json133517004802264191 0
+73D:\alta varinata cafe site\website-cafe-another-variant\package-lock.json133462684429932307 0
+65D:\alta varinata cafe site\website-cafe-another-variant\script.js133572323015569253 0

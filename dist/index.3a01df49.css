@@ -1,0 +1,478 @@
+@import "https://fonts.googleapis.com/css?family=Pattaya|Rubik+Mono+One|Varela+Round";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  vertical-align: baseline;
+  background: none;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  vertical-align: baseline;
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #ccc;
+  font-family: Varela Round, sans-serif;
+  font-size: 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #e6e6e6;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+header {
+  z-index: 1;
+  color: #ccc;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+  padding: 30px;
+  font-weight: 700;
+  transition: background-color 1.3s, min-height 1.3s, padding 1.3s;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+header a:hover {
+  color: #c00;
+  transition: color .3s;
+}
+
+#logo {
+  border: solid #fff;
+}
+
+header img {
+  width: 10vw;
+  height: auto;
+  transition: width 1.3s;
+}
+
+body.scrolled header {
+  color: #4d4d4d;
+  background-color: #ccc;
+  min-height: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body.scrolled header img {
+  width: 4vw;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  padding-left: 20px;
+  list-style: none;
+}
+
+#home {
+  background: url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg") center / cover no-repeat fixed;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 4fr 10fr;
+  height: 100vh;
+  display: grid;
+}
+
+#hero {
+  color: #fff;
+  grid-area: 5 / 1 / 6 / 2;
+  padding-left: 30px;
+}
+
+#hero h1 {
+  text-transform: uppercase;
+  text-align: left;
+  text-shadow: 5px 5px #000;
+  font-family: Rubik Mono One, sans-serif;
+  font-size: 8vw;
+}
+
+#about {
+  background-color: #1a1a1a;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+.about_inner {
+  color: #ccc;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 40vh;
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 1.2em;
+  display: flex;
+}
+
+.about_inner p {
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+#subscribe {
+  background: url("https://image.ibb.co/kJ71od/bigcoffee2.jpg") center / cover no-repeat fixed;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 50% 1fr;
+  justify-items: center;
+  height: 100vh;
+  display: grid;
+}
+
+#email_div {
+  color: #ccc;
+  text-align: center;
+  background-color: #1a1a1a99;
+  border-radius: 3px;
+  flex-direction: column;
+  grid-area: 2 / 2 / 4 / 3;
+  justify-content: space-evenly;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+}
+
+#email {
+  border: none;
+  border-radius: 3px;
+  width: 75%;
+  height: 35px;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+#email.valid {
+  border: 2px solid green;
+}
+
+#email.invalid {
+  border: 2px solid red;
+}
+
+#submit {
+  text-transform: uppercase;
+  color: #ccc;
+  background-color: #f33;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: Varela Round, sans-serif;
+  font-weight: 600;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #f99;
+}
+
+#footer {
+  color: #b3b3b3;
+  background-color: #1f1f1f;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-areas: "contact map hours"
+                       ". copy .";
+  padding-top: 15px;
+  display: grid;
+}
+
+#footer section {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  display: flex;
+}
+
+#footer p {
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+#footer p:last-child {
+  margin-bottom: 0;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#map {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  grid-area: map;
+}
+
+#gmap_canvas {
+  border: 1px solid #b3b3b3;
+  height: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#hours ul {
+  line-height: 30px;
+  list-style-type: none;
+}
+
+#copy {
+  text-align: center;
+  grid-area: copy;
+  font-size: 1vw;
+}
+
+@media only screen and (width <= 750px) {
+  #about {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .about_inner {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+  }
+
+  .about_inner p {
+    text-align: left;
+    max-width: 95%;
+    margin: auto auto 20px;
+  }
+
+  .about_inner h2 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.2em;
+  }
+
+  .video-container {
+    justify-content: center;
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 56.25%;
+    display: flex;
+    position: relative;
+  }
+
+  .video-container iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+  }
+
+  #footer {
+    color: #b3b3b3;
+    text-align: center;
+    background-color: #1f1f1f;
+    grid-template-columns: 100%;
+    grid-template-areas: "contact"
+                         "map"
+                         "hours"
+                         "copy";
+    height: 1170px;
+    font-size: 1.3em;
+  }
+
+  #footer section {
+    align-self: center;
+    padding: 20px 0;
+  }
+
+  #map {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+  }
+
+  #map h2 {
+    padding-top: 10px;
+  }
+
+  #gmap_canvas {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  #hours {
+    border-bottom: 1px solid #333;
+  }
+
+  #hours ul li {
+    line-height: 40px;
+  }
+
+  #copy {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (width <= 650px) {
+  header {
+    z-index: 1;
+    color: #ccc;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    font-weight: 700;
+    transition: background-color 1.3s, min-height 1.3s, padding 1.3s;
+    display: flex;
+  }
+
+  #header-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+  }
+
+  #burger {
+    cursor: pointer;
+    background: url("https://image.ibb.co/jBfT8o/burger_nav_40.png") center no-repeat;
+    width: 65px;
+    height: 50px;
+    padding: 10px;
+    display: block;
+  }
+
+  header img {
+    width: 70px;
+  }
+
+  nav {
+    color: #4d4d4d;
+    background-color: #ccc;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    border-bottom: solid #4d4d4d;
+  }
+
+  nav ul li:hover {
+    background-color: #4d4d4d;
+  }
+
+  nav ul li a {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 25px;
+    display: block;
+  }
+
+  nav ul li a:hover {
+    color: #e6e6e6;
+    background-color: #4d4d4d;
+  }
+
+  #header-wrapper.open {
+    background-color: gray;
+  }
+
+  nav ul.open {
+    height: auto;
+  }
+
+  body.scrolled header {
+    color: #4d4d4d;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    background-color: #808080cc;
+    min-height: 0;
+  }
+
+  body.scrolled header img {
+    width: 60px;
+  }
+}
+
+@media only screen and (width <= 450px) {
+  #home {
+    grid-template-columns: 100%;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #subscribe {
+    grid-template-columns: 1fr 95% 1fr;
+  }
+
+  #email_div {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #email {
+    width: 95%;
+    height: 50px;
+  }
+
+  #submit {
+    width: 95%;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
